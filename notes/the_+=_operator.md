@@ -7,4 +7,4 @@ For example,
 
 instead of using `sum = sum + number`
 
-Rather use: "sum += number"
+Rather use: `sum += number`
