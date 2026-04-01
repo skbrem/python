@@ -7,6 +7,6 @@ cloud_servers = [
 
 for server in cloud_servers:
     if server["cpu"] > 80:
-        print(f"Ticket created: {name} at {ip} is running at {cpu}% CPU")
+        print(f"Ticket created: {server['name']} at {server['ip']} is running at {server['cpu']}% CPU")
 
 print(f"Audit of all of the {len(cloud_servers)} servers completed.")

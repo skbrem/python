@@ -1,0 +1,4 @@
+system.log: MISSING
+auth.log: MISSING
+missing_file.log: MISSING
+kernel.log: MISSING
