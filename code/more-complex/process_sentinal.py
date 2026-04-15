@@ -10,14 +10,15 @@ logging.basicConfig(
     format='%(asctime)s = %(levelname)s - %(message)s'
 )
 
-if len(sys.argv) < 2:
-    print(f"Usage: python {sys.argv[0]} <process_name>")
+if len(sys.argv) < 3:
+    print(f"Usage: python {sys.argv[0]} <process_name> <threshold_percentage>")
     exit(1)
 
 def send_notification(msg):
     pass
 
 target = sys.argv[1]
+threshold = float(sys.argv[2])
 
 try:
     while True:
@@ -38,7 +39,7 @@ try:
                 except (IndexError, ValueError):
                     continue
                 
-        if total_memory > 50.0:
+        if total_memory > threshold:
             error_msg = f"CRITICAL: {target} using {total_memory}"
             logging.warning(error_msg)
             send_notification(error_msg)
