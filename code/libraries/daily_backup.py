@@ -1,7 +1,8 @@
 import os
 import datetime
 
-with open("system.log", "w") as f: f.write("test")
+with open("system.log", "w") as f:
+    f.write("test")
 
 filename = "system.log"
 
