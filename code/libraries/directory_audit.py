@@ -6,7 +6,7 @@ files = os.listdir(".")
 # Here, this would also flat a file called "my.python.notes.txt"
 # To get around this, use `endswith()`
 # for filename in files:
-    if ".py" in filename:
+#    if ".py" in filename:
 #        print(f"Found script: {filename}")
 #    else:
 #        print(f"Other file: {filename}")
